@@ -16,5 +16,17 @@ namespace TrabalhoFinal___Gerenciamento_de_Estoque
         {
             InitializeComponent();
         }
+
+        private void botaoEntrar_Click(object sender, EventArgs e)
+        {
+            Form2 sistema = new Form2();
+            sistema.Show();
+            this.Hide();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

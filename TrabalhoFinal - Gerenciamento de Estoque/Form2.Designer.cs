@@ -28,15 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.BotaoTelaPrincipal = new System.Windows.Forms.Button();
-            this.BotaoCadastroC = new System.Windows.Forms.Button();
-            this.BotaoCadastroT = new System.Windows.Forms.Button();
-            this.BotaoGerenciamento = new System.Windows.Forms.Button();
-            this.botaoPecas = new System.Windows.Forms.Button();
             this.BotaoSair = new System.Windows.Forms.Button();
+            this.botaoPecas = new System.Windows.Forms.Button();
+            this.BotaoGerenciamento = new System.Windows.Forms.Button();
+            this.BotaoCadastroT = new System.Windows.Forms.Button();
+            this.BotaoCadastroC = new System.Windows.Forms.Button();
+            this.BotaoTelaPrincipal = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,57 +57,16 @@
             this.panel1.Size = new System.Drawing.Size(200, 574);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // BotaoSair
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel2.Location = new System.Drawing.Point(200, -1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(904, 571);
-            this.panel2.TabIndex = 1;
-            // 
-            // BotaoTelaPrincipal
-            // 
-            this.BotaoTelaPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotaoTelaPrincipal.Location = new System.Drawing.Point(0, 186);
-            this.BotaoTelaPrincipal.Name = "BotaoTelaPrincipal";
-            this.BotaoTelaPrincipal.Size = new System.Drawing.Size(200, 50);
-            this.BotaoTelaPrincipal.TabIndex = 0;
-            this.BotaoTelaPrincipal.Text = "Tela Principal";
-            this.BotaoTelaPrincipal.UseVisualStyleBackColor = true;
-            this.BotaoTelaPrincipal.Click += new System.EventHandler(this.BotaoTelaPrincipal_Click);
-            // 
-            // BotaoCadastroC
-            // 
-            this.BotaoCadastroC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotaoCadastroC.Location = new System.Drawing.Point(0, 236);
-            this.BotaoCadastroC.Name = "BotaoCadastroC";
-            this.BotaoCadastroC.Size = new System.Drawing.Size(200, 50);
-            this.BotaoCadastroC.TabIndex = 1;
-            this.BotaoCadastroC.Text = "Cadastro Cliente";
-            this.BotaoCadastroC.UseVisualStyleBackColor = true;
-            this.BotaoCadastroC.Click += new System.EventHandler(this.BotaoCadastroC_Click);
-            // 
-            // BotaoCadastroT
-            // 
-            this.BotaoCadastroT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotaoCadastroT.Location = new System.Drawing.Point(0, 286);
-            this.BotaoCadastroT.Name = "BotaoCadastroT";
-            this.BotaoCadastroT.Size = new System.Drawing.Size(200, 50);
-            this.BotaoCadastroT.TabIndex = 2;
-            this.BotaoCadastroT.Text = "Cadastro de Técnico";
-            this.BotaoCadastroT.UseVisualStyleBackColor = true;
-            this.BotaoCadastroT.Click += new System.EventHandler(this.BotaoCadastroT_Click);
-            // 
-            // BotaoGerenciamento
-            // 
-            this.BotaoGerenciamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotaoGerenciamento.Location = new System.Drawing.Point(0, 336);
-            this.BotaoGerenciamento.Name = "BotaoGerenciamento";
-            this.BotaoGerenciamento.Size = new System.Drawing.Size(200, 50);
-            this.BotaoGerenciamento.TabIndex = 3;
-            this.BotaoGerenciamento.Text = "Gerenciamento de O.S.";
-            this.BotaoGerenciamento.UseVisualStyleBackColor = true;
-            this.BotaoGerenciamento.Click += new System.EventHandler(this.BotaoGerenciamento_Click);
+            this.BotaoSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotaoSair.Location = new System.Drawing.Point(0, 436);
+            this.BotaoSair.Name = "BotaoSair";
+            this.BotaoSair.Size = new System.Drawing.Size(200, 50);
+            this.BotaoSair.TabIndex = 6;
+            this.BotaoSair.Text = "Sair";
+            this.BotaoSair.UseVisualStyleBackColor = true;
+            this.BotaoSair.Click += new System.EventHandler(this.BotaoSair_Click);
             // 
             // botaoPecas
             // 
@@ -121,21 +79,62 @@
             this.botaoPecas.UseVisualStyleBackColor = true;
             this.botaoPecas.Click += new System.EventHandler(this.botaoPecas_Click);
             // 
-            // BotaoSair
+            // BotaoGerenciamento
             // 
-            this.BotaoSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotaoSair.Location = new System.Drawing.Point(0, 436);
-            this.BotaoSair.Name = "BotaoSair";
-            this.BotaoSair.Size = new System.Drawing.Size(200, 50);
-            this.BotaoSair.TabIndex = 6;
-            this.BotaoSair.Text = "Sair";
-            this.BotaoSair.UseVisualStyleBackColor = true;
-            this.BotaoSair.Click += new System.EventHandler(this.BotaoSair_Click);
+            this.BotaoGerenciamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotaoGerenciamento.Location = new System.Drawing.Point(0, 336);
+            this.BotaoGerenciamento.Name = "BotaoGerenciamento";
+            this.BotaoGerenciamento.Size = new System.Drawing.Size(200, 50);
+            this.BotaoGerenciamento.TabIndex = 3;
+            this.BotaoGerenciamento.Text = "Gerenciamento de O.S.";
+            this.BotaoGerenciamento.UseVisualStyleBackColor = true;
+            this.BotaoGerenciamento.Click += new System.EventHandler(this.BotaoGerenciamento_Click);
+            // 
+            // BotaoCadastroT
+            // 
+            this.BotaoCadastroT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotaoCadastroT.Location = new System.Drawing.Point(0, 286);
+            this.BotaoCadastroT.Name = "BotaoCadastroT";
+            this.BotaoCadastroT.Size = new System.Drawing.Size(200, 50);
+            this.BotaoCadastroT.TabIndex = 2;
+            this.BotaoCadastroT.Text = "Cadastro de Técnico";
+            this.BotaoCadastroT.UseVisualStyleBackColor = true;
+            this.BotaoCadastroT.Click += new System.EventHandler(this.BotaoCadastroT_Click);
+            // 
+            // BotaoCadastroC
+            // 
+            this.BotaoCadastroC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotaoCadastroC.Location = new System.Drawing.Point(0, 236);
+            this.BotaoCadastroC.Name = "BotaoCadastroC";
+            this.BotaoCadastroC.Size = new System.Drawing.Size(200, 50);
+            this.BotaoCadastroC.TabIndex = 1;
+            this.BotaoCadastroC.Text = "Cadastro Cliente";
+            this.BotaoCadastroC.UseVisualStyleBackColor = true;
+            this.BotaoCadastroC.Click += new System.EventHandler(this.BotaoCadastroC_Click);
+            // 
+            // BotaoTelaPrincipal
+            // 
+            this.BotaoTelaPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotaoTelaPrincipal.Location = new System.Drawing.Point(0, 186);
+            this.BotaoTelaPrincipal.Name = "BotaoTelaPrincipal";
+            this.BotaoTelaPrincipal.Size = new System.Drawing.Size(200, 50);
+            this.BotaoTelaPrincipal.TabIndex = 0;
+            this.BotaoTelaPrincipal.Text = "Tela Principal";
+            this.BotaoTelaPrincipal.UseVisualStyleBackColor = true;
+            this.BotaoTelaPrincipal.Click += new System.EventHandler(this.BotaoTelaPrincipal_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Location = new System.Drawing.Point(200, -1);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(904, 571);
+            this.panel2.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::TrabalhoFinal___Gerenciamento_de_Estoque.Properties.Resources.ESSA;
             this.pictureBox1.Location = new System.Drawing.Point(29, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(139, 132);

@@ -88,5 +88,7 @@ namespace TrabalhoFinal___Gerenciamento_de_Estoque
             txtNome.Focus();
 
         }
+
+
     }
 }

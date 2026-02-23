@@ -32,7 +32,7 @@ namespace TrabalhoFinal___Gerenciamento_de_Estoque
                 if (c is MaskedTextBox)
                 {
                     ((MaskedTextBox)c).Clear();
-                    // Opcional: define o texto como vazio caso o Clear() não remova a máscara
+                    
                     ((MaskedTextBox)c).Text = string.Empty;
                 }
 
@@ -53,7 +53,7 @@ namespace TrabalhoFinal___Gerenciamento_de_Estoque
             try
             {
                 ClienteD dao = new ClienteD();
-                // O DataSource é a "fonte de dados" do componente
+                
                 dgvClientes.DataSource = dao.ListarClientes();
             }
             catch (Exception ex)
@@ -74,7 +74,7 @@ namespace TrabalhoFinal___Gerenciamento_de_Estoque
             obj.Aparelho = txtAparelho.Text;
             obj.Problema = txtProblema.Text;
 
-            // 2. Chama o método de inserção
+           
             try
             {
                 ClienteD dao = new ClienteD();

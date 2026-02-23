@@ -74,7 +74,6 @@ namespace TrabalhoFinal___Gerenciamento_de_Estoque
                 if (c is MaskedTextBox)
                 {
                     ((MaskedTextBox)c).Clear();
-                    // Opcional: define o texto como vazio caso o Clear() não remova a máscara
                     ((MaskedTextBox)c).Text = string.Empty;
                 }
 
